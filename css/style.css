@@ -1,0 +1,279 @@
+/* Importando a folha de estilo de fontes do Google */
+@import url("fonts-google.css");
+
+:root {
+  --white_letters: #ffffff;
+  --blue_aside: rgb(9, 37, 59);
+  --bg_body: #000000;
+  --bg_topics: rgba(3, 19, 31, 1.1);
+  --separators_colors: #bab9b9;
+  --radius_vertical_letter: 0px 5px 5px 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  background-color: var(--bg_body);
+  background-image: repeating-linear-gradient(45deg, var(--bg_body), var(--bg_body) 10px, #111 10px, var(--bg_body) 20px);
+  background-size: 9.8px 9.0px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+aside {
+  max-width: 250px;
+  width: 100%;
+  background-color: var(--blue_aside);
+  border-radius: 7px 0px 0px 7px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white_letters);
+  border-radius: 0px 7px 7px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.perfil_curriculum {
+  color: var(--white_letters);
+  text-align: center;
+  padding-top: 25px;
+}
+
+.perfil_curriculum img {
+  width: 44%;
+  border: 7px solid var(--white_letters);
+  border-radius: 50%;
+}
+
+.perfil_curriculum .img_msg_bg {
+  background: url("../img/img_msg_bg.png") center/cover no-repeat;
+  color: var(--white_letters);
+  padding: 3px 8px 8px 8px;
+  background-size: contain;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+.perfil_curriculum .img_msg_bg p {
+  padding: 5px 7px 10px 7px;
+  font-size: 12px;
+}
+
+.perfil_curriculum h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.perfil_curriculum h4 {
+  font-size: 12px;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+.bio_topic,
+.contact_topic,
+.idioms_topic {
+  background-color: var(--bg_topics);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--white_letters);
+  margin: 0;
+  padding: 7px;
+}
+
+.bio_topic i,
+.contact_topic i,
+.idioms_topic i {
+  margin-right: 10px;
+}
+
+.bio_curriculum_perfil,
+.contact_curriculum_perfil,
+.idioms_curriculum_perfil {
+  padding: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  color: var(--white_letters);
+}
+
+.contact_item, .idioms_item{
+display: flex;
+ padding: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  color: var(--white_letters);
+}
+.contact_item i{
+  padding-right: 5px;
+}
+.idioms_item i{
+  padding-right: 5px;
+}
+.item_label{
+  text-align: right;
+}
+.trajectory_curriculum {
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.trajectory_curriculum ul {
+  padding-left: 15px;
+  list-style-type: none;
+}
+
+.trajectory_curriculum ul li {
+  padding: 5px;
+}
+
+ul.origin {
+  width: 400px;
+  font-size: 14px;
+}
+
+ul.years {
+  width: 110px;
+  font-size: 14px;
+}
+
+.icons_trajectory_curriculum {
+  padding: 20px;
+  font-size: 55px;
+}
+
+.edu_trajectory_curriculum {
+  display: flex;
+  align-items: center;
+}
+
+.edu_vertical_letter {
+  writing-mode: vertical-rl;
+  background-color: rgb(248, 117, 0);
+  padding: 7px;
+  max-height: auto;
+  border-radius: var(--radius_vertical_letter);
+  color: var(--white_letters);
+}
+
+.edu_trajectory_curriculum .college {
+  border-right: var(--separators_colors) solid 2px;
+
+}
+
+.edu_trajectory_curriculum i {
+  color: rgb(248, 117, 0);
+}
+
+.exp_trajectory_curriculum {
+  display: flex;
+  align-items: center;
+}
+
+.exp_vertical_letter {
+  writing-mode: vertical-rl;
+  background-color: #3498db;
+  padding: 7px;
+  max-height: auto;
+  border-radius: var(--radius_vertical_letter);
+  color: var(--white_letters);
+}
+
+.exp_trajectory_curriculum .workplaces {
+  border-right: var(--separators_colors) solid 2px;
+}
+
+.exp_trajectory_curriculum i {
+  color: #3498db;
+}
+
+.skills_trajectory_curriculum {
+  display: flex;
+  align-items: center;
+}
+
+.skills_vertical_letter {
+  writing-mode: vertical-rl;
+  background-color: #27ae60;
+  padding: 7px;
+  max-height: auto;
+  border-radius: var(--radius_vertical_letter);
+  color: var(--white_letters);
+}
+
+.skills_trajectory_curriculum .skills_list {
+  border-right: var(--separators_colors) solid 2px;
+}
+
+.skills_trajectory_curriculum i {
+  color: #27ae60;
+}
+
+.cert_trajectory_curriculum {
+  display: flex;
+  align-items: center;
+}
+
+.cert_vertical_letter {
+  writing-mode: vertical-rl;
+  background-color: #e74c3c;
+  padding: 7px;
+  max-height: auto;
+  border-radius: var(--radius_vertical_letter);
+  color: var(--white_letters);
+}
+
+.cert_trajectory_curriculum .certifications {
+  border-right: var(--separators_colors) solid 2px;
+}
+
+.cert_trajectory_curriculum i {
+  color: #e74c3c;
+}
+
+.extra_info_trajectory_curriculum {
+  display: flex;
+  align-items: center;
+  max-width: 555px;
+}
+
+.extra_vertical_letter {
+  writing-mode: vertical-rl;
+  background-color: #3f0c6e;
+  padding: 7px;
+  max-height: auto;
+  border-radius: var(--radius_vertical_letter);
+  color: var(--white_letters);
+}
+
+.extra_info_list {
+  padding-left: 20px;
+  border-right: var(--separators_colors) solid 2px;
+}
+
+.extra_info_trajectory_curriculum i {
+  color: #3f0c6e;
+}
+
+.separator_vertical {
+  width: 100%;
+  max-width: 400px;
+  border: solid 1px var(--separators_colors);
+  margin: 0px auto;
+}
+
+.separator_horizontal {
+  height: 100px;
+  border-left: solid 1px var(--separators_colors);
+}
